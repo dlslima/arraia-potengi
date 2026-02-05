@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf3f3;
+}
+
+header {
+    padding: 15px 0;
+    background-color: #333;
+    position: relative;
+    z-index: 10;
+}
+
+.pagina-inicio header,
+.pagina-fundo header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+nav a.active {
+    background-color: #555;
+}
+
+main {
+    padding: 40px 20px;
+    min-height: calc(100vh - 150px);
+}
+
+main.home {
+    background-image: url('img/igreja.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 400px;
+    width: 100%;
+}
+
+main.programacao,
+main.sobre,
+main.login {
+    background-image: url('img/madeira.png');
+    background-size: cover;
+    background-repeat: repeat;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+h1 {
+    color: white;
+    font-size: 28px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.conteudo-programacao {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+}
+
+.conteudo-programacao p {
+    margin-bottom: 10px;
+}
+
+.conteudo-programacao strong {
+    color: #ffd700;
+}
+
+.conteudo-sobre {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+}
+
+.conteudo-sobre p {
+    margin-bottom: 10px;
+}
+
+.formulario-login {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    color: white;
+}
+
+.formulario-login label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffd700;
+}
+
+.formulario-login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.formulario-login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 10px;
+    }
+    
+    nav a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    .logo {
+        max-width: 250px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
